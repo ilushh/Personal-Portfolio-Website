@@ -1,13 +1,8 @@
 # Personal-Portfolio-Website 
 
 
-<style>
-.blue-bg {
-  background-color: blue;
-}
-</style>
+<p style="font-size: 18px;">👷🏼‍♀️<b>At the moment, I am building my personal website.</b>👩🏼‍🏭.</p>
 
-<p class="blue-bg">👷🏼‍♀️<b>At the moment, I am building my personal website.</b>👩🏼‍🏭</p>
 
 
  - My name is Jülide and I am originally from the north. 
