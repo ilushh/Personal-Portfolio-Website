@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat&display=swap'");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -22,8 +22,8 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Inter', sans-serif;
   --title-font: 'Montserrat', sans-serif;
+  --body-font: 'Inter', sans-serif;
   --biggest-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -120,7 +120,7 @@ body.dark-theme {
 
 .grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .section {
@@ -187,7 +187,7 @@ body.dark-theme {
 
 .nav__toggle{
   display: flex;
-  font-size:1.25rem;
+  font-size: 1.25rem;
   cursor: pointer;
 
 }
@@ -209,9 +209,9 @@ body.dark-theme {
 }
 
 .nav__list{
-grid-template-columns: repeat(3 , max-content);   /* drei nebeneinander */
-justify-content: center;
-gap: 2rem 3rem;
+  grid-template-columns: repeat(3, max-content);   /* drei nebeneinander */
+  justify-content: center;
+  gap: 2rem 3rem;
 }
 
 
@@ -220,7 +220,8 @@ gap: 2rem 3rem;
   flex-direction: column;
   align-items: center;
   row-gap: .25rem;
-  font-size: var(--text-color-light);
+  font-size: var(--smaller-front-size);
+  color: var(--text-color-light);
   transition: color .3s;   /* Übergang zwischen zwei Zuständen */
 }
 
@@ -229,7 +230,7 @@ gap: 2rem 3rem;
 }
 
 .nav__link i{
-  font-size: 1.23rem; /* größe der icons */
+  font-size: 1.25rem; /* größe der icons */
 }
 
 .nav__close{
@@ -249,6 +250,59 @@ gap: 2rem 3rem;
 
 
 /*=============== HOME ===============*/
+.home__container{
+  row-gap: 4rem;
+  padding-top: 2rem;
+}
+
+.home__data{
+  row-gap: 1.5rem;
+}
+
+.home__title{
+  text-align: center;
+  font-size: var(--biggest-font-size);
+  letter-spacing: .3px;
+  margin-bottom: .4rem;
+}
+
+.home__blob{
+  position: relative;
+  width: 260px;
+  height:255px;
+  background-color: var(--body-color);
+  justify-self: center;
+
+}
+
+.home__profil{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  border-radius: 3.5rem;
+}
+
+.home__shape-wawes,
+.home__shape-wawes2{
+  position: absolute;
+  opacity: .1;
+}
+
+.home__shape-wawes{
+
+  left: -25rem;
+  top: 5rem;
+}
+
+.home__shape-wawes2{
+  width: 180px;
+  bottom: -2rem;
+  right: -1rem;
+  top: 5rem;
+
+}
+
 
 
 /*=============== SKILLS ===============*/
